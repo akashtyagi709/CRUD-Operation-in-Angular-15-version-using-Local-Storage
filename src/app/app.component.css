@@ -1,0 +1,16 @@
+.container{
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.abc{
+    position: relative;
+    left: 20%;
+    top: 20%;
+    height: 80%;
+    width: 70%;
+}
+.value{
+   background-color: red;
+}
