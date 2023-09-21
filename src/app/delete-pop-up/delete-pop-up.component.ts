@@ -17,9 +17,7 @@ export class DeletePopUpComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
     this.dataSourceCall();
-
   }
 
   dataSourceCall() {
@@ -28,21 +26,19 @@ export class DeletePopUpComponent implements OnInit {
     }
   }
 
-  yes() {
-
+  yesDeleteData() {
     this.dataSourceCall();
     for (let i = 0; i < this.dataArray.length; i++) {
       const element = this.dataArray[i];
       if (this.userId == element.id) {
         this.dataArray.splice(i, 1);
       }
-      localStorage.clear();
     }
     localStorage.setItem('studentArray', JSON.stringify(this.dataArray));
     this.dialogRef.close();
   }
 
-  no() {
+  noDeleteData() {
     this.dialogRef.close();
   }
 

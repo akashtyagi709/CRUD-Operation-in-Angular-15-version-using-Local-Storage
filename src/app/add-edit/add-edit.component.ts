@@ -80,7 +80,6 @@ export class AddEditComponent implements OnInit {
         newDataArr.push(element);
       }
     }
-    localStorage.clear();
     localStorage.setItem('studentArray', JSON.stringify(newDataArr));
   }
 }
